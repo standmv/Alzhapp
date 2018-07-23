@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "595696484100",
+    "firebase_url": "https://alzheimers-maps-project.firebaseio.com",
+    "project_id": "alzheimers-maps-project",
+    "storage_bucket": "alzheimers-maps-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595696484100:android:51cfd1cc84decbdf",
+        "android_client_info": {
+          "package_name": "com.demoyageek.alzhapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595696484100-pop6g3krgj8sj02k3hb9sif5678ls5kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqJsx5ZRmub_8uCMlYDyZv3YP0vkg1BMM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
