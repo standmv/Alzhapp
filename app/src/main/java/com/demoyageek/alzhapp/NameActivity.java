@@ -66,6 +66,7 @@ public class NameActivity extends AppCompatActivity implements View.OnClickListe
             inviteCodeIntent.putExtra("date", date);
             inviteCodeIntent.putExtra("isSharing", "false");
             inviteCodeIntent.putExtra("imageUri", resultUri);
+            inviteCodeIntent.putExtra("code", code);
             startActivity(inviteCodeIntent);
         }
         else{
@@ -92,6 +93,7 @@ public class NameActivity extends AppCompatActivity implements View.OnClickListe
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
                 resultUri = result.getUri();
+                circleImageView.setImageURI(resultUri);
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Exception error = result.getError();
             }

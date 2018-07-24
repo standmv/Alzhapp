@@ -29,7 +29,7 @@ public class PasswordActivity extends AppCompatActivity implements View.OnClickL
     }
 
     public void namePickActivity(View v){
-        if(editRegisterPassword.getText().toString().length() > 6){
+        if(editRegisterPassword.getText().toString().length() >= 6){
             Intent nameRegisterIntent = new Intent(PasswordActivity.this, NameActivity.class);
             nameRegisterIntent.putExtra("email", email);
             nameRegisterIntent.putExtra("password", editRegisterPassword.getText().toString());
