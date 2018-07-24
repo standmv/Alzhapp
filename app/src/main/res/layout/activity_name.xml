@@ -12,12 +12,13 @@
         android:layout_height="96dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:onClick="selectImage"
         android:layout_marginTop="66dp"
         android:src="@drawable/ic_launcher_background" />
 
     <EditText
         android:id="@+id/editRegisterName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
