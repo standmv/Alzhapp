@@ -115,7 +115,8 @@ public class UserLocationMainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_joinCircle) {
-            // Handle the camera action
+            Intent mainActivityIntent = new Intent(UserLocationMainActivity.this, JoinCircleActivity.class);
+            startActivity(mainActivityIntent);
         } else if (id == R.id.nav_myCircle) {
 
         } else if (id == R.id.nav_joinedCircle) {

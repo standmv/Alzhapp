@@ -1,12 +1,13 @@
 package com.demoyageek.alzhapp.Encapsulation;
 
 public class User {
-    private String name, email, password, code, isSharing, latitude, longitude, imageUrl;
+    private String userId, name, email, password, code, isSharing, latitude, longitude, imageUrl;
 
     public User(){
     }
 
-    public User(String name, String email, String password, String code, String isSharing, String latitude, String longitude, String imageUrl) {
+    public User(String userId, String name, String email, String password, String code, String isSharing, String latitude, String longitude, String imageUrl) {
+        this.userId = userId;
         this.name = name;
         this.email = email;
         this.password = password;
@@ -80,5 +81,13 @@ public class User {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }

@@ -62,8 +62,9 @@ public class InviteCodeActivity extends AppCompatActivity implements View.OnClic
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    User newUser = new User(name, email, password, code, "false", "na", "na", "na");
+
                     firebaseUser = firebaseAuth.getCurrentUser();
+                    User newUser = new User(firebaseUser.getUid(),name, email, password, code, "false", "na", "na", "na");
                     userId = firebaseUser.getUid();
 
                     databaseReference.child(userId).setValue(newUser).addOnCompleteListener(new OnCompleteListener<Void>() {
