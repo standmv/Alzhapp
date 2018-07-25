@@ -68,6 +68,7 @@ public class NameActivity extends AppCompatActivity implements View.OnClickListe
             inviteCodeIntent.putExtra("imageUri", resultUri);
             inviteCodeIntent.putExtra("code", code);
             startActivity(inviteCodeIntent);
+            finish();
         }
         else{
             Toast.makeText(getApplicationContext(), "Por favor seleccione una imagen", Toast.LENGTH_SHORT).show();

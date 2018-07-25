@@ -6,19 +6,36 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnSignUp;
     Button btnLogin;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        btnLogin = findViewById(R.id.btnLogin);
-        btnLogin.setOnClickListener(this);
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+        if(firebaseUser == null){
+            setContentView(R.layout.activity_main);
 
-        btnSignUp = findViewById(R.id.btnSignUp);
-        btnSignUp.setOnClickListener(this);
+            btnLogin = findViewById(R.id.btnLogin);
+            btnLogin.setOnClickListener(this);
+
+            btnSignUp = findViewById(R.id.btnSignUp);
+            btnSignUp.setOnClickListener(this);
+        }
+        else{
+            Intent navigationDrawerIntent = new Intent(MainActivity.this, NavigationDrawerActivity.class);
+            startActivity(navigationDrawerIntent);
+            finish();
+        }
+
     }
 
     @Override

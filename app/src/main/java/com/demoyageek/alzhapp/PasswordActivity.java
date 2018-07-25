@@ -34,6 +34,7 @@ public class PasswordActivity extends AppCompatActivity implements View.OnClickL
             nameRegisterIntent.putExtra("email", email);
             nameRegisterIntent.putExtra("password", editRegisterPassword.getText().toString());
             startActivity(nameRegisterIntent);
+            finish();
         }
         else{
             Toast.makeText(getApplicationContext(), "La contraseña debe tener un tamano mayor a 6 caracteres", Toast.LENGTH_LONG).show();

@@ -50,6 +50,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         Intent passwordIntent = new Intent(RegisterActivity.this, PasswordActivity.class);
                         passwordIntent.putExtra("email", editRegisterEmail.getText().toString());
                         startActivity(passwordIntent);
+                        finish();
                     }
                     else{
                         Toast.makeText(getApplicationContext(), "Este correo ya esta en uso", Toast.LENGTH_LONG).show();
