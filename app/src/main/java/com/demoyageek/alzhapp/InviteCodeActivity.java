@@ -72,7 +72,7 @@ public class InviteCodeActivity extends AppCompatActivity implements View.OnClic
                             if(task.isSuccessful()){
                                 Toast.makeText(getApplicationContext(), "Usuario Creado Satisfactoriamente", Toast.LENGTH_SHORT).show();
                                 finish();
-                                Intent navigationIntent = new Intent(InviteCodeActivity.this, NavigationDrawerActivity.class);
+                                Intent navigationIntent = new Intent(InviteCodeActivity.this, UserLocationMainActivity.class);
                                 startActivity(navigationIntent);
                             }
                             else {

@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(task.isSuccessful())
                 {
                     Toast.makeText(getApplicationContext(), "Inicio de Sesion Satisfactorio", Toast.LENGTH_LONG).show();
-                    Intent navigationDrawerIntent = new Intent(LoginActivity.this, NavigationDrawerActivity.class);
+                    Intent navigationDrawerIntent = new Intent(LoginActivity.this, UserLocationMainActivity.class);
                     startActivity(navigationDrawerIntent);
                     finish();
                 }

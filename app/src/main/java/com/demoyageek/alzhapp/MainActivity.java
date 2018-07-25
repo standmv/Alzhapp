@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             permissionManager.checkAndRequestPermissions(this);
         }
         else{
-            Intent navigationDrawerIntent = new Intent(MainActivity.this, NavigationDrawerActivity.class);
+            Intent navigationDrawerIntent = new Intent(MainActivity.this, UserLocationMainActivity.class);
             startActivity(navigationDrawerIntent);
             finish();
         }
