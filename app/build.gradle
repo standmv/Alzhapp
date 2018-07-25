@@ -31,4 +31,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.1'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    implementation 'com.github.karanchuri:PermissionManager:0.1.0'
 }
